@@ -2,44 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2019/02/18/CleanMyMac/</loc>
+    <loc>http://yoursite.com/schedule/index.html</loc>
     
-    <lastmod>2019-02-18T07:34:06.038Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2019/02/18/AirServer/</loc>
-    
-    <lastmod>2019-02-18T07:34:04.927Z</lastmod>
+    <lastmod>2019-02-18T09:34:11.800Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/favorite/index.html</loc>
+    <loc>http://yoursite.com/about/index.html</loc>
     
-    <lastmod>2019-02-18T06:40:47.641Z</lastmod>
+    <lastmod>2019-02-18T09:27:53.013Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/tags/index.html</loc>
     
-    <lastmod>2019-02-18T06:40:47.641Z</lastmod>
+    <lastmod>2019-02-18T09:25:15.010Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/catagories/index.html</loc>
+    <loc>http://yoursite.com/favorite/index.html</loc>
     
-    <lastmod>2019-02-18T06:40:47.640Z</lastmod>
+    <lastmod>2019-02-18T09:25:07.610Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/categories/index.html</loc>
+    
+    <lastmod>2019-02-18T09:24:59.708Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/archive/index.html</loc>
     
-    <lastmod>2019-02-18T06:40:47.640Z</lastmod>
+    <lastmod>2019-02-18T09:24:49.947Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2019/02/18/CleanMyMac/</loc>
+    
+    <lastmod>2019-02-18T07:56:01.457Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2019/02/18/AirServer/</loc>
+    
+    <lastmod>2019-02-18T07:43:27.081Z</lastmod>
     
   </url>
   
