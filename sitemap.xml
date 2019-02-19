@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2019/02/18/AirServer/</loc>
+    
+    <lastmod>2019-02-19T08:09:23.116Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2019/02/18/CleanMyMac/</loc>
+    
+    <lastmod>2019-02-19T08:09:21.594Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/schedule/index.html</loc>
     
     <lastmod>2019-02-18T09:34:11.800Z</lastmod>
@@ -40,20 +54,6 @@
     <loc>http://yoursite.com/archive/index.html</loc>
     
     <lastmod>2019-02-18T09:24:49.947Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2019/02/18/CleanMyMac/</loc>
-    
-    <lastmod>2019-02-18T07:56:01.457Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2019/02/18/AirServer/</loc>
-    
-    <lastmod>2019-02-18T07:43:27.081Z</lastmod>
     
   </url>
   
