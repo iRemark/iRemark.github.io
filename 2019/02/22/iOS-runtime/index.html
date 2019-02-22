@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="记一些·笔记">
 <meta property="og:description" content="简介Objective-C 扩展了 C 语言，并加入了面向对象特性和 Smalltalk 式的消息传递机制。而这个扩展的核心是一个用 C 和 编译语言 写的 Runtime 库。它是 Objective-C 面向对象和动态机制的基石。 Objective-C 是一个动态语言，这意味着它不仅需要一个编译器，也需要一个运行时系统来动态得创建类和对象、进行消息传递和转发。理解 Objective-C 的">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-02-22T06:36:54.990Z">
+<meta property="og:updated_time" content="2019-02-22T07:14:26.346Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="iOS-Runtime">
 <meta name="twitter:description" content="简介Objective-C 扩展了 C 语言，并加入了面向对象特性和 Smalltalk 式的消息传递机制。而这个扩展的核心是一个用 C 和 编译语言 写的 Runtime 库。它是 Objective-C 面向对象和动态机制的基石。 Objective-C 是一个动态语言，这意味着它不仅需要一个编译器，也需要一个运行时系统来动态得创建类和对象、进行消息传递和转发。理解 Objective-C 的">
@@ -433,17 +433,16 @@
 <figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">objc_enumerationMutation</span><br><span class="line">objc_<span class="keyword">set</span>EnumerationMutationHandler</span><br><span class="line">imp_implementationWithBlock</span><br><span class="line">imp_getBlock</span><br><span class="line">imp_removeBlock</span><br><span class="line">objc_loadWeak</span><br><span class="line">objc_storeWeak</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<p>本地连接：<br>
+<h2 id="详细介绍"><a href="#详细介绍" class="headerlink" title="详细介绍"></a>详细介绍</h2>
 
 	<div class="row">
-    <embed src="iOS-Runtime/iOS-Runtime.pdf" width="100%" height="550" type="application/pdf">
+    <embed src="../iOS-Runtime/Runtime.pdf" width="100%" height="550" type="application/pdf">
 	</div>
 
 
-</p>
-<h2 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h2><p><a href="https://github.com/DeveloperErenLiu/RuntimePDF" target="_blank" rel="noopener">https://github.com/DeveloperErenLiu/RuntimePDF</a></p>
+
+<h2 id="更多资料"><a href="#更多资料" class="headerlink" title="更多资料"></a>更多资料</h2><p><a href="https://github.com/DeveloperErenLiu/RuntimePDF" target="_blank" rel="noopener">https://github.com/DeveloperErenLiu/RuntimePDF</a></p>
 <h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://juejin.im/post/5ac0a6116fb9a028de44d717" target="_blank" rel="noopener">https://juejin.im/post/5ac0a6116fb9a028de44d717</a><br><a href="https://www.cnblogs.com/zhangxiaoping/p/5146647.html" target="_blank" rel="noopener">https://www.cnblogs.com/zhangxiaoping/p/5146647.html</a></p>
-<p>hexo g<br>hexo d<br>hexo clean</p>
 
       
     </div>
@@ -476,8 +475,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/02/22/iOS-属性修修饰符/" rel="next" title="iOS-属性修修饰符">
-                <i class="fa fa-chevron-left"></i> iOS-属性修修饰符
+              <a href="/2019/02/18/mac-如何删除系统软件/" rel="next" title="Mac-如何删除系统软件">
+                <i class="fa fa-chevron-left"></i> Mac-如何删除系统软件
               </a>
             
           </div>
@@ -485,6 +484,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/02/22/iOS-多线程/" rel="prev" title="iOS-多线程">
+                iOS-多线程 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -623,7 +626,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#简介"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Runtime-API"><span class="nav-number">2.</span> <span class="nav-text">Runtime API</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更多"><span class="nav-number">3.</span> <span class="nav-text">更多</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考"><span class="nav-number">4.</span> <span class="nav-text">参考</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#简介"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Runtime-API"><span class="nav-number">2.</span> <span class="nav-text">Runtime API</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#详细介绍"><span class="nav-number">3.</span> <span class="nav-text">详细介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更多资料"><span class="nav-number">4.</span> <span class="nav-text">更多资料</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考"><span class="nav-number">5.</span> <span class="nav-text">参考</span></a></li></ol></div>
             
 
           </div>
