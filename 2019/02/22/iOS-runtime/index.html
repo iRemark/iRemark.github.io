@@ -67,7 +67,7 @@
 
 
 
-  <meta name="keywords" content="iOS,runtime,">
+  <meta name="keywords" content="iOS,Runtime,">
 
 
 
@@ -78,18 +78,18 @@
 
 
 
-<meta name="description" content="简介Objective-C 扩展了 C 语言，并加入了面向对象特性和 Smalltalk 式的消息传递机制。而这个扩展的核心是一个用 C 和 编译语言 写的 runtime 库。它是 Objective-C 面向对象和动态机制的基石。 Objective-C 是一个动态语言，这意味着它不仅需要一个编译器，也需要一个运行时系统来动态得创建类和对象、进行消息传递和转发。理解 Objective-C 的">
-<meta name="keywords" content="iOS,runtime">
+<meta name="description" content="简介Objective-C 扩展了 C 语言，并加入了面向对象特性和 Smalltalk 式的消息传递机制。而这个扩展的核心是一个用 C 和 编译语言 写的 Runtime 库。它是 Objective-C 面向对象和动态机制的基石。 Objective-C 是一个动态语言，这意味着它不仅需要一个编译器，也需要一个运行时系统来动态得创建类和对象、进行消息传递和转发。理解 Objective-C 的">
+<meta name="keywords" content="iOS,Runtime">
 <meta property="og:type" content="article">
-<meta property="og:title" content="iOS-runtime">
-<meta property="og:url" content="http://yoursite.com/2019/02/22/iOS-runtime/index.html">
+<meta property="og:title" content="iOS-Runtime">
+<meta property="og:url" content="http://yoursite.com/2019/02/22/iOS-Runtime/index.html">
 <meta property="og:site_name" content="记一些·笔记">
-<meta property="og:description" content="简介Objective-C 扩展了 C 语言，并加入了面向对象特性和 Smalltalk 式的消息传递机制。而这个扩展的核心是一个用 C 和 编译语言 写的 runtime 库。它是 Objective-C 面向对象和动态机制的基石。 Objective-C 是一个动态语言，这意味着它不仅需要一个编译器，也需要一个运行时系统来动态得创建类和对象、进行消息传递和转发。理解 Objective-C 的">
+<meta property="og:description" content="简介Objective-C 扩展了 C 语言，并加入了面向对象特性和 Smalltalk 式的消息传递机制。而这个扩展的核心是一个用 C 和 编译语言 写的 Runtime 库。它是 Objective-C 面向对象和动态机制的基石。 Objective-C 是一个动态语言，这意味着它不仅需要一个编译器，也需要一个运行时系统来动态得创建类和对象、进行消息传递和转发。理解 Objective-C 的">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-02-22T03:35:46.251Z">
+<meta property="og:updated_time" content="2019-02-22T03:40:38.718Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="iOS-runtime">
-<meta name="twitter:description" content="简介Objective-C 扩展了 C 语言，并加入了面向对象特性和 Smalltalk 式的消息传递机制。而这个扩展的核心是一个用 C 和 编译语言 写的 runtime 库。它是 Objective-C 面向对象和动态机制的基石。 Objective-C 是一个动态语言，这意味着它不仅需要一个编译器，也需要一个运行时系统来动态得创建类和对象、进行消息传递和转发。理解 Objective-C 的">
+<meta name="twitter:title" content="iOS-Runtime">
+<meta name="twitter:description" content="简介Objective-C 扩展了 C 语言，并加入了面向对象特性和 Smalltalk 式的消息传递机制。而这个扩展的核心是一个用 C 和 编译语言 写的 Runtime 库。它是 Objective-C 面向对象和动态机制的基石。 Objective-C 是一个动态语言，这意味着它不仅需要一个编译器，也需要一个运行时系统来动态得创建类和对象、进行消息传递和转发。理解 Objective-C 的">
 
 
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/02/22/iOS-runtime/">
+  <link rel="canonical" href="http://yoursite.com/2019/02/22/iOS-Runtime/">
 
 
 
 
 
-  <title>iOS-runtime | 记一些·笔记</title>
+  <title>iOS-Runtime | 记一些·笔记</title>
   
 
 
@@ -294,7 +294,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/22/iOS-runtime/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/22/iOS-Runtime/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Chuck Lee">
@@ -311,7 +311,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">iOS-runtime</h1>
+          <h1 class="post-title" itemprop="name headline">iOS-Runtime</h1>
         
 
         <div class="post-meta">
@@ -383,13 +383,13 @@
       
 
       
-        <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Objective-C 扩展了 C 语言，并加入了面向对象特性和 Smalltalk 式的消息传递机制。而这个扩展的核心是一个用 C 和 编译语言 写的 runtime 库。它是 Objective-C 面向对象和动态机制的基石。</p>
-<p>Objective-C 是一个动态语言，这意味着它不仅需要一个编译器，也需要一个运行时系统来动态得创建类和对象、进行消息传递和转发。理解 Objective-C 的 runtime 机制可以帮我们更好的了解这个语言，适当的时候还能对语言进行扩展，从系统层面解决项目中的一些设计或技术问题。了解 runtime ，要先了解它的核心 - 消息传递 （Messaging）。</p>
-<p>runtime其实有两个版本: “modern” 和 “legacy”。我们现在用的 Objective-C 2.0 采用的是现行 (Modern) 版的 runtime 系统，只能运行在 iOS 和 macOS 10.5 之后的 64 位程序中。而 macOS 较老的32位程序仍采用 Objective-C 1 中的（早期）Legacy 版本的 Runtime 系统。这两个版本最大的区别在于当你更改一个类的实例变量的布局时，在早期版本中你需要重新编译它的子类，而现行版就不需要。<br>runtime 基本是用 C 和汇编写的，可见苹果为了动态系统的高效而作出的努力。你可以在这里下到苹果维护的开源代码。苹果和GNU各自维护一个开源的 runtime 版本，这两个版本之间都在努力的保持一致。</p>
+        <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Objective-C 扩展了 C 语言，并加入了面向对象特性和 Smalltalk 式的消息传递机制。而这个扩展的核心是一个用 C 和 编译语言 写的 Runtime 库。它是 Objective-C 面向对象和动态机制的基石。</p>
+<p>Objective-C 是一个动态语言，这意味着它不仅需要一个编译器，也需要一个运行时系统来动态得创建类和对象、进行消息传递和转发。理解 Objective-C 的 Runtime 机制可以帮我们更好的了解这个语言，适当的时候还能对语言进行扩展，从系统层面解决项目中的一些设计或技术问题。了解 Runtime ，要先了解它的核心 - 消息传递 （Messaging）。</p>
+<p>Runtime其实有两个版本: “modern” 和 “legacy”。我们现在用的 Objective-C 2.0 采用的是现行 (Modern) 版的 Runtime 系统，只能运行在 iOS 和 macOS 10.5 之后的 64 位程序中。而 macOS 较老的32位程序仍采用 Objective-C 1 中的（早期）Legacy 版本的 Runtime 系统。这两个版本最大的区别在于当你更改一个类的实例变量的布局时，在早期版本中你需要重新编译它的子类，而现行版就不需要。<br>Runtime 基本是用 C 和汇编写的，可见苹果为了动态系统的高效而作出的努力。你可以在这里下到苹果维护的开源代码。苹果和GNU各自维护一个开源的 Runtime 版本，这两个版本之间都在努力的保持一致。</p>
 <p>平时的业务中主要是使用官方Api，解决我们框架性的需求。</p>
-<p>高级编程语言想要成为可执行文件需要先编译为汇编语言再汇编为机器语言，机器语言也是计算机能够识别的唯一语言，但是OC并不能直接编译为汇编语言，而是要先转写为纯C语言再进行编译和汇编的操作，从OC到C语言的过渡就是由runtime来实现的。然而我们使用OC进行面向对象开发，而C语言更多的是面向过程开发，这就需要将面向对象的类转变为面向过程的结构体。</p>
+<p>高级编程语言想要成为可执行文件需要先编译为汇编语言再汇编为机器语言，机器语言也是计算机能够识别的唯一语言，但是OC并不能直接编译为汇编语言，而是要先转写为纯C语言再进行编译和汇编的操作，从OC到C语言的过渡就是由Runtime来实现的。然而我们使用OC进行面向对象开发，而C语言更多的是面向过程开发，这就需要将面向对象的类转变为面向过程的结构体。</p>
 <a id="more"></a>
-<h2 id="runtime-API"><a href="#runtime-API" class="headerlink" title="runtime API"></a>runtime API</h2><ul>
+<h2 id="Runtime-API"><a href="#Runtime-API" class="headerlink" title="Runtime API"></a>Runtime API</h2><ul>
 <li><p>使用类</p>
 <figure class="highlight ceylon"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span><span class="number">_</span>getName</span><br><span class="line"><span class="keyword">class</span><span class="number">_</span>getSuperclass</span><br><span class="line"><span class="keyword">class</span><span class="number">_</span>isMetaClass</span><br><span class="line"><span class="keyword">class</span><span class="number">_</span>getInstanceSize</span><br><span class="line"><span class="keyword">class</span><span class="number">_</span>getInstanceVariable</span><br><span class="line"><span class="keyword">class</span><span class="number">_</span>getClassVariable</span><br><span class="line"><span class="keyword">class</span><span class="number">_</span>addIvar</span><br><span class="line"><span class="keyword">class</span><span class="number">_</span>copyIvarList</span><br><span class="line"><span class="keyword">class</span><span class="number">_</span>getIvarLayout</span><br><span class="line"><span class="keyword">class</span><span class="number">_</span>setIvarLayout</span><br><span class="line"><span class="keyword">class</span><span class="number">_</span>getWeakIvarLayout</span><br><span class="line"><span class="keyword">class</span><span class="number">_</span>setWeakIvarLayout</span><br><span class="line"><span class="keyword">class</span><span class="number">_</span>getProperty</span><br><span class="line"><span class="keyword">class</span><span class="number">_</span>copyPropertyList</span><br><span class="line"><span class="keyword">class</span><span class="number">_</span>addMethod</span><br><span class="line"><span class="keyword">class</span><span class="number">_</span>getInstanceMethod</span><br><span class="line"><span class="keyword">class</span><span class="number">_</span>getClassMethod</span><br><span class="line"><span class="keyword">class</span><span class="number">_</span>copyMethodList</span><br><span class="line"><span class="keyword">class</span><span class="number">_</span>replaceMethod</span><br><span class="line"><span class="keyword">class</span><span class="number">_</span>getMethodImplementation</span><br><span class="line"><span class="keyword">class</span><span class="number">_</span>getMethodImplementation<span class="number">_</span>stret</span><br><span class="line"><span class="keyword">class</span><span class="number">_</span>respondsToSelector</span><br><span class="line"><span class="keyword">class</span><span class="number">_</span>addProtocol</span><br><span class="line"><span class="keyword">class</span><span class="number">_</span>addProperty</span><br><span class="line"><span class="keyword">class</span><span class="number">_</span>replaceProperty</span><br><span class="line"><span class="keyword">class</span><span class="number">_</span>conformsToProtocol</span><br><span class="line"><span class="keyword">class</span><span class="number">_</span>copyProtocolList</span><br><span class="line"><span class="keyword">class</span><span class="number">_</span>getVersion</span><br><span class="line"><span class="keyword">class</span><span class="number">_</span>setVersion</span><br><span class="line">objc<span class="number">_</span>getFutureClass</span><br><span class="line">objc<span class="number">_</span>setFutureClass</span><br><span class="line"><span class="keyword">class</span><span class="number">_</span>setSuperclass 已过时的OS X V<span class="number">10.5</span></span><br></pre></td></tr></table></figure>
 </li>
@@ -411,7 +411,7 @@
 <li><p>联想参考</p>
 <figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">objc_<span class="keyword">set</span>AssociatedObject</span><br><span class="line">objc_getAssociatedObject</span><br><span class="line">objc_removeAssociatedObjects</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>发送消息<br>当它遇到一个方法调用时，编译器可能会生成调用任意几个函数来执行实际的消息调度，根据不同的接收器，返回值和参数。您可以使用这些功能来动态地从你自己的纯C代码中调用方法，或者使用不NSObject的公司允许说法的形式进行……方法。这些函数在声明/usr/include/objc/objc-runtime.h。</p>
+<li><p>发送消息<br>当它遇到一个方法调用时，编译器可能会生成调用任意几个函数来执行实际的消息调度，根据不同的接收器，返回值和参数。您可以使用这些功能来动态地从你自己的纯C代码中调用方法，或者使用不NSObject的公司允许说法的形式进行……方法。这些函数在声明/usr/include/objc/objc-Runtime.h。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">objc_msgSend发送一个消息，一个简单的返回值的类的实例。</span><br><span class="line">objc_msgSend_stret发送与数据结构返回值的消息，一个类的实例。</span><br><span class="line">objc_msgSendSuper发送一个消息，一个简单的返回值的类的实例的超类。</span><br><span class="line">objc_msgSendSuper_stret发送消息与数据结构返回值的类的实例的超类。</span><br><span class="line">objc_msgSend</span><br><span class="line">objc_msgSend_fpret</span><br><span class="line">objc_msgSend_stret</span><br><span class="line">objc_msgSendSuper</span><br><span class="line">objc_msgSendSuper_stret</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>与工作方法</p>
@@ -433,6 +433,7 @@
 <figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">objc_enumerationMutation</span><br><span class="line">objc_<span class="keyword">set</span>EnumerationMutationHandler</span><br><span class="line">imp_implementationWithBlock</span><br><span class="line">imp_getBlock</span><br><span class="line">imp_removeBlock</span><br><span class="line">objc_loadWeak</span><br><span class="line">objc_storeWeak</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
+<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><p><a href="https://juejin.im/post/5ac0a6116fb9a028de44d717" target="_blank" rel="noopener">https://juejin.im/post/5ac0a6116fb9a028de44d717</a><br><a href="https://www.cnblogs.com/zhangxiaoping/p/5146647.html" target="_blank" rel="noopener">https://www.cnblogs.com/zhangxiaoping/p/5146647.html</a></p>
 
       
     </div>
@@ -452,7 +453,7 @@
           
             <a href="/tags/iOS/" rel="tag"># iOS</a>
           
-            <a href="/tags/runtime/" rel="tag"># runtime</a>
+            <a href="/tags/Runtime/" rel="tag"># Runtime</a>
           
         </div>
       
@@ -612,7 +613,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#简介"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#runtime-API"><span class="nav-number">2.</span> <span class="nav-text">runtime API</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#简介"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Runtime-API"><span class="nav-number">2.</span> <span class="nav-text">Runtime API</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#引用"><span class="nav-number">3.</span> <span class="nav-text">引用</span></a></li></ol></div>
             
 
           </div>
