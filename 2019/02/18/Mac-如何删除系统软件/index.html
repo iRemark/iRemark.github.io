@@ -78,18 +78,18 @@
 
 
 
-<meta name="description" content="mac 系统软件系统都有写入保护，首先要打开root 权限（开启SIP），然后就可以删除了。 步骤1：command+r 进入恢复模式 然后打开终端输入命令： csrutil disable　关闭SIP, 可允许删除系统软件csrutil enable　 打开SIP, 不允许删除系统软件 步骤2：现在重启后可以删除 系统软件啦 😁">
+<meta name="description" content="mac 系统软件系统都有写入保护，首先要打开root 权限（开启SIP），然后就可以删除了。 步骤1：command+r 进入恢复模式 然后打开终端输入命令： 12csrutil disable　关闭SIP, 可允许删除系统软件csrutil enable　 打开SIP, 不允许删除系统软件 步骤2：现在重启后可以删除 系统软件啦 😁">
 <meta name="keywords" content="mac,系统">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Mac-如何删除系统软件">
 <meta property="og:url" content="http://yoursite.com/2019/02/18/Mac-如何删除系统软件/index.html">
 <meta property="og:site_name" content="技术博客">
-<meta property="og:description" content="mac 系统软件系统都有写入保护，首先要打开root 权限（开启SIP），然后就可以删除了。 步骤1：command+r 进入恢复模式 然后打开终端输入命令： csrutil disable　关闭SIP, 可允许删除系统软件csrutil enable　 打开SIP, 不允许删除系统软件 步骤2：现在重启后可以删除 系统软件啦 😁">
+<meta property="og:description" content="mac 系统软件系统都有写入保护，首先要打开root 权限（开启SIP），然后就可以删除了。 步骤1：command+r 进入恢复模式 然后打开终端输入命令： 12csrutil disable　关闭SIP, 可允许删除系统软件csrutil enable　 打开SIP, 不允许删除系统软件 步骤2：现在重启后可以删除 系统软件啦 😁">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-02-21T09:54:02.942Z">
+<meta property="og:updated_time" content="2019-02-22T02:06:39.314Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mac-如何删除系统软件">
-<meta name="twitter:description" content="mac 系统软件系统都有写入保护，首先要打开root 权限（开启SIP），然后就可以删除了。 步骤1：command+r 进入恢复模式 然后打开终端输入命令： csrutil disable　关闭SIP, 可允许删除系统软件csrutil enable　 打开SIP, 不允许删除系统软件 步骤2：现在重启后可以删除 系统软件啦 😁">
+<meta name="twitter:description" content="mac 系统软件系统都有写入保护，首先要打开root 权限（开启SIP），然后就可以删除了。 步骤1：command+r 进入恢复模式 然后打开终端输入命令： 12csrutil disable　关闭SIP, 可允许删除系统软件csrutil enable　 打开SIP, 不允许删除系统软件 步骤2：现在重启后可以删除 系统软件啦 😁">
 
 
 
@@ -385,15 +385,11 @@
       
         <p>mac 系统软件系统都有写入保护，首先要打开root 权限（开启SIP），然后就可以删除了。</p>
 <p><strong>步骤1</strong>：command+r 进入恢复模式 然后打开终端输入命令：</p>
-<p>csrutil disable　关闭SIP, 可允许删除系统软件<br>csrutil enable　 打开SIP, 不允许删除系统软件</p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">csrutil <span class="builtin-name">disable</span>　关闭SIP, 可允许删除系统软件</span><br><span class="line">csrutil <span class="builtin-name">enable</span>　 打开SIP, 不允许删除系统软件</span><br></pre></td></tr></table></figure>
 <p><strong>步骤2</strong>：<br>现在重启后可以删除 系统软件啦 😁</p>
 <a id="more"></a>
 <p><strong>测试</strong>：<br>可以删除系统软件试试：</p>
-<p>进入软件目录：cd /Applications/  然后下面开始删除试试：</p>
-<p>删除Safari浏览器：<br>sudo rm -rf Safari.app/</p>
-<p>删除FaceTime<br>sudo rm -rf FaceTime.app/</p>
-<p>删除QuickTime Player<br>sudo rm -rf QuickTime\ Player.app/</p>
-
+<figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">进入软件目录：<span class="keyword">cd</span> /Applications/  然后下面开始删除试试：</span><br><span class="line"></span><br><span class="line">删除Safari浏览器：</span><br><span class="line">sudo <span class="keyword">rm</span> -rf Safari.<span class="keyword">app</span>/</span><br><span class="line"></span><br><span class="line">删除FaceTime</span><br><span class="line">sudo <span class="keyword">rm</span> -rf FaceTime.<span class="keyword">app</span>/</span><br><span class="line"></span><br><span class="line">删除QuickTime Player</span><br><span class="line">sudo <span class="keyword">rm</span> -rf QuickTime\ Player.<span class="keyword">app</span>/</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -519,7 +515,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
